@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProjectGroup2.wpfDescDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGroup2"
+        mc:Ignorable="d"
+        Title="Assignment Detail" Height="404.695" Width="757.348" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <DataGrid x:Name="dgDesc" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="277" Margin="10,44,0,0" Grid.Column="0" VerticalAlignment="Top" Width="731" >
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Binding="{Binding sourceId}" Header="Source ID" Width="2*" />
+                <DataGridTextColumn Binding="{Binding sDate, StringFormat='yyyy-mm-dd'}" Header="Date" Width="4*" />
+                <DataGridTextColumn Binding="{Binding name}" Header="Assignment Name" Width="8*" />
+                <DataGridTextColumn Binding="{Binding description}" Header="description" Width="8*" />
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Assignment List" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btDescEdit" Content="Edit" HorizontalAlignment="Left" Margin="190,333,0,0" VerticalAlignment="Top" Width="131" Height="28" Click="btDescEdit_Click_1" />
+        <Button x:Name="btDescdel" Content="delete" HorizontalAlignment="Left" Margin="336,333,0,0" VerticalAlignment="Top" Width="131" Height="28" Click="btDescdel_Click" />
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="483,333,0,0" VerticalAlignment="Top" Width="131" Height="28" Click="btnClose_Click" />
+
+    </Grid>
+</Window>

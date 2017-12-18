@@ -1,0 +1,25 @@
+﻿<Window x:Class="ProjectGroup2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGroup2"
+        mc:Ignorable="d"
+        Title="Data Tracking" Height="600" Width="600" Style="{StaticResource mainStyle}" WindowStartupLocation="CenterScreen"  >
+    <Grid>
+        <GroupBox Header="Group" HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="574" Margin="10,13,0,0">
+
+        </GroupBox>
+        <Button x:Name="btnAddGroup" Content="Add Group" HorizontalAlignment="Left" Margin="121,78,0,0" VerticalAlignment="Top" Width="145" Height="39" FontSize="16" Click="btnAddGroup_Click"/>
+        <Button x:Name="btnSearchGroup" Content="Search Group" HorizontalAlignment="Left" Margin="328,78,0,0" VerticalAlignment="Top" Width="145" Height="39" FontSize="16" Click="btnSearchGroup_Click"/>
+
+        <GroupBox Header="Student" HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="574" Margin="10,178,0,0"/>
+        <GroupBox Header="Assignment" HorizontalAlignment="Left" Height="135" VerticalAlignment="Top" Width="574" Margin="10,348,0,0"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="121,252,0,0" VerticalAlignment="Top" Width="145" Height="39" FontSize="16" Click="btnAddStudent_Click"/>
+        <Button x:Name="btnSearchStudent" Content="Search Student" HorizontalAlignment="Left" Margin="328,252,0,0" VerticalAlignment="Top" Width="145" Height="39" FontSize="16" Click="btnSearchStudent_Click"/>
+        <Button x:Name="btnAddAssignment" Content="Add Assignment" HorizontalAlignment="Left" Margin="121,421,0,0" VerticalAlignment="Top" Width="145" Height="39" FontSize="16" Click="btnAddAssignment_Click"/>
+        <Button x:Name="btnSearchAssignment" Content="Search Assignment" HorizontalAlignment="Left" Margin="328,421,0,0" VerticalAlignment="Top" Width="145" Height="39" FontSize="16" Click="btnSearchAssignment_Click"/>
+        <Button x:Name="btnDataSheet" Content="Data Sheet" HorizontalAlignment="Left" Margin="204,507,0,0" VerticalAlignment="Top" Width="152" Height="39" FontSize="16" Click="btnDataSheet_Click" />
+
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProjectGroup2.wpfStudentDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGroup2"
+        mc:Ignorable="d"
+        Title="Student list" Height="357.551" Width="638.189" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <DataGrid x:Name="dgStudentList" HorizontalAlignment="Left" Grid.Column="0" VerticalAlignment="Top" AutoGenerateColumns="False" Height="227" Margin="8,39,0,0" Width="609" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding index}" Header="ID" Width="1*" />
+                <DataGridTextColumn Binding="{Binding studentId}" Header="Student ID" Width="1*" />
+                <DataGridTextColumn Binding="{Binding firstName}" Header="FirstName" Width="2*"/>
+                <DataGridTextColumn Binding="{Binding lastName}" Header="LastName" Width="2*"/>
+                <DataGridTextColumn Binding="{Binding gradeLevel}" Header="GradeLevel" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding educatorId}" Header="Educator_id" Width="1*"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Students List" HorizontalAlignment="Center" Margin="233,0,238,0" VerticalAlignment="Top" Height="34" Width="161" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top" Width="131" Height="28" Click="btnAddStudent_Click" />
+        <Button x:Name="btndelStudent" Content="delete Student" HorizontalAlignment="Left" Margin="146,282,0,0" VerticalAlignment="Top" Width="131" Height="28" Click="btndelStudent_Click" />
+        <Button x:Name="btnEditStudent" Content="Edit Student" HorizontalAlignment="Left" Margin="282,282,0,0" VerticalAlignment="Top" Width="131" Height="28" Click="btnEditStudent_Click" />
+        <Button x:Name="btnStudent" Content="View Student Detail" HorizontalAlignment="Left" Margin="418,282,0,0" VerticalAlignment="Top" Width="131" Height="28" />
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="554,282,0,0" VerticalAlignment="Top" Width="63" Height="28" Click="btnClose_Click" />
+
+    </Grid>
+</Window>

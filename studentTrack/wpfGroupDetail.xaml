@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProjectGroup2.wpfGroupDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGroup2"
+        mc:Ignorable="d"
+        Title="Group Detail" Height="370.408" Width="607.494" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+
+        <Button x:Name="btnDelGroup" Content="Delete Group" HorizontalAlignment="Left" Width="92"  Margin="196,302,0,9.8" Click="btnDelGroup_Click"/>
+        <Button x:Name="btnEditGroup" Content="Edit Group" HorizontalAlignment="Left" Width="92" Margin="91,302,0,9.8" Click="btnEditGroup_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Width="92"  Margin="304,302,0,9.8" Click="btnClose_Click"/>
+        <Button x:Name="btnGroupDetail" Content="More Group Detail" HorizontalAlignment="Left" Width="129"  Margin="411,302,0,9.8" Click="btnGroupDetail_Click"/>
+
+        <DataGrid x:Name="dgGroupList" AutoGenerateColumns="False"  HorizontalAlignment="Left" Height="277" Margin="10,10,0,0" VerticalAlignment="Top" Width="581">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding groupSStartDate}" Header="Instructional Date" Width="1*" />
+                <DataGridTextColumn Binding="{Binding groupName}" Header="Group Name" Width="1*" />
+                <DataGridTextColumn Binding="{Binding groupDesc}" Header="Subjec/Description" Width="1*" />
+                <DataGridTextColumn Binding="{Binding groupStartTime}" Header="Schedule/Time" Width="1*" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

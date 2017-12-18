@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProjectGroup2.wpfStudentEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGroup2"
+        mc:Ignorable="d"
+        Title="Edit Student" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--<Label Content="Student #" HorizontalAlignment="Left" Margin="30,19,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbId"  HorizontalAlignment="Left" Height="23" Margin="96,22,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="342"/>-->
+        <Label Content="First name" HorizontalAlignment="Left" Margin="27,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbFName" HorizontalAlignment="Left" Height="23" Margin="96,52,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="342"/>
+        <Label Content="Last name" HorizontalAlignment="Left" Margin="27,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbLName" HorizontalAlignment="Left" Height="23" Margin="96,81,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="342"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="153,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="265,206,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click" />
+        <Label Content="GradeLevel" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbGLevel" HorizontalAlignment="Left" Height="23" Margin="96,110,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="132"/>
+        <Label Content="Educator ID" HorizontalAlignment="Left" Margin="27,138,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEId" HorizontalAlignment="Left" Height="23" Margin="96,142,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="132"/>
+        <Label Content="Student ID" HorizontalAlignment="Left" Margin="27,20,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbSId" HorizontalAlignment="Left" Height="23" Margin="96,24,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="132"/>
+
+    </Grid>
+</Window>
